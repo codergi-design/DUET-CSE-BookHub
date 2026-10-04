@@ -36,4 +36,4 @@ To run this project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/codergi-design/DUET-CSE-BookHub.git](https://github.com/codergi-design/DUET-CSE-BookHub.git)
+ git clone https://github.com/codergi-design/DUET-CSE-BookHub.git
