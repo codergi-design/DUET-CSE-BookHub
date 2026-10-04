@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookHub">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".AddBookActivity" />
+        <activity android:name=".BookDetailsActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SoldBooksActivity" />
+        <activity android:name=".DeletedBooksActivity" />
+        <activity android:name=".InterestedBooksActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".MyBooksActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".ManageBooksActivity" />
+        <activity android:name=".ManageUsersActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".ManageSupportActivity" />
+        <activity android:name=".EditBookActivity" />
+        <activity android:name=".AdminNotificationsActivity" />
+    </application>
+
+</manifest>

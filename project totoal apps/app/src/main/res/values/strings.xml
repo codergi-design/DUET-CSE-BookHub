@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BookHub</string>
+    <string name="profile">Profile</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">user@gmail.com</string>
+    <string name="edit">Edit</string>
+    <string name="change_password">Change Password</string>
+    <string name="sold_books">Sold Books</string>
+    <string name="deleted_books">Deleted Books</string>
+    <string name="version_info">Version 3.1.30</string>
+    <string name="home">Home</string>
+    <string name="my_books">My Books</string>
+    <string name="add_book">Add Book</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="query_type">Query Type</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="email_domain">\@student.duet.ac.bd</string>
+</resources>

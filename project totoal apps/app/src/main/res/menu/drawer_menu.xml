@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Upload Book" />
+        <item
+            android:id="@+id/nav_interested"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="Interested" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@android:drawable/ic_menu_call"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Log Out" />
+            <item
+                android:id="@+id/nav_delete_account"
+                android:icon="@android:drawable/ic_menu_delete"
+                android:title="Delete Account" />
+        </menu>
+    </item>
+</menu>

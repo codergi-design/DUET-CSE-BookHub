@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <!-- Top Blue Bar -->
+    <RelativeLayout
+        android:id="@+id/profileTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0284C7"
+        android:paddingBottom="15dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/profileBackBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/profile"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/profile"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_below="@id/profileTopBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/profileNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/user_name"
+                android:textColor="#1E293B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileEmailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/user_email"
+                android:textColor="#64748B"
+                android:textSize="14sp" />
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/editProfileBtn"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#0284C7"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="22dp" />
+
+            <!-- Menu Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Change Password -->
+                    <TextView
+                        android:id="@+id/menuChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawablePadding="16dp"
+                        app:drawableStartCompat="@android:drawable/ic_lock_idle_lock"
+                        app:drawableTint="#64748B"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/change_password"
+                        android:textColor="#1E293B"
+                        android:textSize="15sp" />
+
+                    <!-- Sold Books -->
+                    <TextView
+                        android:id="@+id/menuSoldBooks"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawablePadding="16dp"
+                        app:drawableStartCompat="@android:drawable/ic_menu_agenda"
+                        app:drawableTint="#64748B"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/sold_books"
+                        android:textColor="#1E293B"
+                        android:textSize="15sp" />
+
+                    <!-- Deleted Books -->
+                    <TextView
+                        android:id="@+id/menuDeletedBooks"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawablePadding="16dp"
+                        app:drawableStartCompat="@android:drawable/ic_menu_delete"
+                        app:drawableTint="#64748B"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/deleted_books"
+                        android:textColor="#1E293B"
+                        android:textSize="15sp" />
+
+                    <!-- Admin Panel (Hidden by default) -->
+                    <TextView
+                        android:id="@+id/menuAdminPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawablePadding="16dp"
+                        app:drawableStartCompat="@android:drawable/ic_lock_lock"
+                        app:drawableTint="#0284C7"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/admin_panel"
+                        android:textColor="#0284C7"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/version_info"
+                android:textColor="#94A3B8"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="#64748B"
+            android:textSize="11sp"
+            android:drawablePadding="4dp"
+            app:drawableTopCompat="@android:drawable/ic_menu_today"
+            app:drawableTint="#64748B"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/navMyBooks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/my_books"
+            android:textColor="#64748B"
+            android:textSize="11sp"
+            android:drawablePadding="4dp"
+            app:drawableTopCompat="@android:drawable/ic_menu_gallery"
+            app:drawableTint="#64748B"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/navAddBook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/add_book"
+            android:textColor="#64748B"
+            android:textSize="11sp"
+            android:drawablePadding="4dp"
+            app:drawableTopCompat="@android:drawable/ic_input_add"
+            app:drawableTint="#64748B"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="#0284C7"
+            android:textSize="11sp"
+            android:drawablePadding="4dp"
+            app:drawableTopCompat="@android:drawable/ic_menu_myplaces"
+            app:drawableTint="#0284C7"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

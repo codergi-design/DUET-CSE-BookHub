@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query_types">
+        <item>General Inquiry</item>
+        <item>App Bug/Issue</item>
+        <item>Book Related Issue</item>
+        <item>Account Deletion</item>
+        <item>Other</item>
+    </string-array>
+</resources>
