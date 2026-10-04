@@ -26,7 +26,8 @@
 
 ## 📱 Screenshots
 
-> *Add app screenshots here* 
+> *<img width="576" height="1280" alt="photo_6147552554271838890_y" src="https://github.com/user-attachments/assets/e0f0fa03-7f11-4bb8-be66-b674c13b1a68" />
+Add app screenshots here* 
 
 ---
 
